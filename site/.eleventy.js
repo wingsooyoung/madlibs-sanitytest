@@ -7,6 +7,7 @@ module.exports = function (eleventyConfig) {
     name: "userlibs", // the name to use for the functions
     functionsDir: "./functions/", // The functions directory
     copy: ["utils/"], // Any files that need to be copied to make our scripts work
+    redirects: "netlify-toml-builders",
     excludeDependencies: ["./_data/madlibs.js"] // Exclude any files you don't want to run
   });
 };
