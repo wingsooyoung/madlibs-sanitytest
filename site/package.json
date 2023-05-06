@@ -12,13 +12,13 @@
   "license": "ISC",
   "dependencies": {
     "@11ty/eleventy": "^2.0.1",
-    "@netlify/functions": "^0.7.2",
+    "@netlify/functions": "^1.4.0",
     "@portabletext/to-html": "^2.0.0",
     "@sanity/client": "^6.0.1",
-    "dotenv": "^8.2.0",
-    "groq-js": "^0.2.0",
+    "dotenv": "^16.0.3",
+    "groq-js": "^1.1.9",
     "htm": "^3.1.1",
-    "nanoid": "^3.3.6",
+    "nanoid": "^4.0.2",
     "nested-keys": "^0.0.2",
     "vhtml": "^2.2.0"
   }
