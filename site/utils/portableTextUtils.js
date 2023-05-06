@@ -6,23 +6,16 @@ const html = htm.bind(vhtml)
 
 const myPortableTextComponents = {
   types: {
-        madlibField: ({node}) => html`<span class="empty" id="${node._key}">${node.displayText}</span>`
-      
-            return h('span', node.displayText, {id: node._key, className: 'empty'})
-        }
-    }
-
+        madlibField: ({value}) => html`<span class="empty" id="${value._key}">${value.displayText}</span>`
+  }
 }
-
-console.log()
-
-//---------------
 
 
 const prepText = (data) => {
     // Takes the data from a specific Sanity document
     // and creates a new htmlText property to contain the HTML
     // This lets us keep the Portable Text data intact and still display HTML
+  
     return {
         ...data,
         htmlText: toHTML(data, {components: myPortableTextComponents})
@@ -30,4 +23,5 @@ const prepText = (data) => {
 }
 
 // We only need to export prepText for our functions
+
 module.exports = {prepText}
