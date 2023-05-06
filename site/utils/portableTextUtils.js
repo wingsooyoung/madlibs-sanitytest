@@ -18,7 +18,7 @@ const prepText = (data) => {
   
     return {
         ...data,
-        htmlText: toHTML(data, {components: myPortableTextComponents})
+        htmlText: toHTML(data.text, {components: myPortableTextComponents})
     }
 }
 
