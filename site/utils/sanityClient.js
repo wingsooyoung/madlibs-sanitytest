@@ -1,6 +1,6 @@
 const {createClient} = require('@sanity/client')
 
-const client = createClient({
+const client = sanityClient({
   projectId: 't2qgvbba',
   dataset: 'production',
   useCdn: true, // set to `false` to bypass the edge cache
