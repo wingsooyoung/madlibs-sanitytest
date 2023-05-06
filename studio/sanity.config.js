@@ -1,6 +1,7 @@
 // sanity.config.js
 import { defineConfig } from "sanity";
-import { deskTool } from 'sanity/desk'
+import { deskTool } from 'sanity/desk';
+import schemas from './schemas/schema';
 
 export default defineConfig({
   title: "brown-pony",
@@ -8,6 +9,6 @@ export default defineConfig({
   dataset: "production",
   plugins: [deskTool()],
   schema: {
-    types: [],
+    types: schemas,
   },
 });
