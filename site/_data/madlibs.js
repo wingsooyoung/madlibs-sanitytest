@@ -1,5 +1,5 @@
 // Get our utilities
-const client = require('../utils/sanityClient')
+const client = require('../utils/createClient')
 const {prepText} = require('../utils/portableTextUtils')
 // The GROQ query used to find specific documents and 
 // shape the output 

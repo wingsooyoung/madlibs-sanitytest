@@ -5,7 +5,7 @@ require('dotenv').config()
 // Sanity JS Client
 // The build client is read-only
 // To use to write, we need to add an API token with proper permissions
-const client = require('../utils/sanityClient')
+const client = require('../utils/createClient')
 client.config({
     token: process.env.SANITY_TOKEN,
     useCdn: false

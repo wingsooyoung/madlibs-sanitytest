@@ -30,7 +30,7 @@ npm install
 netlify dev
 ```
 
-To pull data from YOUR Sanity project, you need to change the project ID from `/site/utils/sanityClient.js`. You'll also need to create an Editor token from your [Sanity dashboard](https://sanity.io/manage) and create a new environment variable in your [Netlify](https://netlify.com) project. 
+To pull data from YOUR Sanity project, you need to change the project ID from `/site/utils/createClient.js`. You'll also need to create an Editor token from your [Sanity dashboard](https://sanity.io/manage) and create a new environment variable in your [Netlify](https://netlify.com) project. 
 
 ## Deployment
 This repository contains two separate sites: the 11ty `site` and Sanity `studio`. It's not currently set up as a monorepo. The `site` directory is set to deploy to Netlify. The `studio` directory currently does not have deployment set up, but can be run locally or deployed to Sanity's hosted service with `sanity deploy`.

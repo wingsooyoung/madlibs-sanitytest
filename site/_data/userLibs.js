@@ -1,4 +1,4 @@
-const client = require('../utils/sanityClient')
+const client = require('../utils/createClient')
 const {prepText} = require('../utils/portableTextUtils')
 
 const query = `*[_type == "userLib"]{
