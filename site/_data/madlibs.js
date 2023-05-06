@@ -9,7 +9,7 @@ const query = `*[_type == "madlib"]{
     text,
     _id,
     "formFields": text[]{
-        children[_type == "madlibField"]{
+        children[_type == "madLibField"]{
             displayText,
             grammar,
             _key

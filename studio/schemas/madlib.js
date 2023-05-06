@@ -33,7 +33,7 @@ export default {
           name: 'block',
           of: [
             // An array of "inline" blocks
-            { type: 'madlibField' }
+            { type: 'madLibField' }
           ]
         },
       ]

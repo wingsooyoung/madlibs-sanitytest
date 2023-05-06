@@ -29,7 +29,7 @@ export default {
           type: 'block',
           name: 'block',
           of: [
-            { type: 'madlibField' }
+            { type: 'madLibField' }
           ]
         },
       ]

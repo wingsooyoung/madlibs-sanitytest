@@ -6,7 +6,7 @@ const html = htm.bind(vhtml)
 
 const myPortableTextComponents = {
   types: {
-        madlibField: ({value}) => html`<span class="empty" id="${value._key}">${value.displayText}</span>`
+        madLibField: ({value}) => html`<span class="empty" id="${value._key}">${value.displayText}</span>`
   }
 }
 

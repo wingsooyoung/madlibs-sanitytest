@@ -15,7 +15,7 @@ function madlibPreview({ value }) {
 
 export default {
   title: 'Madlib Field Details',
-  name: 'madlibField',
+  name: 'madLibField',
   type: 'object',
   fields: [
     {
