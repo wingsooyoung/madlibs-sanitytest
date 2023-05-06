@@ -3,14 +3,18 @@ dist
 _site
 .env
 .DS_Store
-# Local Netlify folder
 .netlify
 .sanity
+.vscode
 
 netlify/functions/serverless/*
-!netlify/functions/serverless/index.js
-netlify/functions/madlib/*
-!netlify/functions/madlib/index.js
-studio/package-lock.json
 
+!netlify/functions/serverless/index.js
+
+netlify/functions/madlib/*
+
+!netlify/functions/madlib/index.js
+
+
+studio/package-lock.json
 studio/deleteUserLibs.js

@@ -3,6 +3,7 @@ const client = require('../utils/createClient')
 const {prepText} = require('../utils/portableTextUtils')
 // The GROQ query used to find specific documents and 
 // shape the output 
+
 const query = `*[_type == "madlib"]{
     title,
     "slug": slug.current,
@@ -23,6 +24,7 @@ module.exports = async function() {
 
     // Prepare the Portable Text data
     const preppedMadlib = madlibs.map(prepText)
+
     // Return the full array
     return preppedMadlib
 }
