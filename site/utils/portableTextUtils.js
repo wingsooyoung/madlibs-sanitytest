@@ -1,16 +1,23 @@
-// Initializes the package
-const toHtml = require('@sanity/block-content-to-html')
-const h = toHtml.h;
+import htm from 'htm'
+import vhtml from 'vhtml'
+import {toHTML} from '@portabletext/to-html'
 
-const serializers = {
-    types: {
-        madlibField: ({node}) => {
-            // Takes each node of `type` `madlibField`
-            // and returns an HTML span with an id, class, and text
+const html = htm.bind(vhtml)
+
+const myPortableTextComponents = {
+  types: {
+        madlibField: ({node}) => html`<span class="empty" id="${node._key}">${node.displayText}</span>`
+      
             return h('span', node.displayText, {id: node._key, className: 'empty'})
         }
     }
+
 }
+
+console.log()
+
+//---------------
+
 
 const prepText = (data) => {
     // Takes the data from a specific Sanity document
@@ -18,10 +25,7 @@ const prepText = (data) => {
     // This lets us keep the Portable Text data intact and still display HTML
     return {
         ...data,
-        htmlText: toHtml({
-            blocks: data.text, // Portable Text data
-            serializers: serializers // The serializer to use
-        })
+        htmlText: toHTML(data, {components: myPortableTextComponents})
     }
 }
 
