@@ -6,7 +6,7 @@ require("./eleventy-bundler-modules.js");
 
 async function handler(event) {
   let elev = new EleventyServerless("userlibs", {
-    path: event.path,
+    path: new URL(event.rawUrl).pathname,
     query: event.queryStringParameters,
     inputDir: ".",
     functionsDir: "./functions/",
@@ -39,13 +39,6 @@ async function handler(event) {
     };
   }
 }
-
-// Choose one:
-// * Runs on each request: AWS Lambda (or Netlify Function)
-// * Runs on first request only: Netlify On-demand Builder
-//   (don’t forget to `npm install @netlify/functions`)
-
-// exports.handler = handler;
 
 const { builder } = require("@netlify/functions");
 exports.handler = builder(handler);

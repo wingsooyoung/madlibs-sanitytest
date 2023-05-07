@@ -22,7 +22,7 @@ function completeLib(event) {
 
   inputs.forEach(input => {
     // The button is an input and we don't want that in the final data
-    if (input.type != 'text') return
+    if (input.type !== 'text') return
     // Find a span by the input's name
     // These will both be the _key value
     const replacedContent = document.getElementById(input.name)

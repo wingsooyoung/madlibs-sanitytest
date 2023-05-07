@@ -1,9 +1,8 @@
 const sanityClient = require('@sanity/client')
 module.exports = sanityClient({
-    projectId: 'eyrp0gsd',
+    projectId: 't2qgvbba',
     dataset: 'production',
-    apiVersion: '2021-06-07',
+    apiVersion: '2023-05-03',
     useCdn: true
-
 })
 

@@ -1,6 +1,12 @@
+[build]
+command = "npm run build"
+functions = "functions"
+publish = "_site"
+base = "site"
+
 [[redirects]]
 from = "/userlibs/:slug/"
-to = "/.netlify/functions/userlibs"
+to = "/.netlify/builders/userlibs"
 status = 200
 force = true
 _generated_by_eleventy_serverless = "userlibs"

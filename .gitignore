@@ -1,4 +1,4 @@
-node_modules
+**/node_modules/**
 dist
 _site
 .env
@@ -6,7 +6,8 @@ _site
 # Local Netlify folder
 .netlify
 
-netlify/functions/serverless/*
-!netlify/functions/serverless/index.js
-netlify/functions/madlib/*
-!netlify/functions/madlib/index.js
+netlify/builders/userlibs/*
+!netlify/builders/userlibs/index.js
+
+netlify/functions/userlibs/*
+!netlify/functions/userlibs/index.js
