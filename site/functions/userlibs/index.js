@@ -6,8 +6,8 @@ require("./eleventy-bundler-modules.js");
 
 async function handler(event) {
   let elev = new EleventyServerless("userlibs", {
-    path: new URL(event.rawUrl).pathname,
-    query: event.queryStringParameters,
+    path: event.path,
+    // query: event.queryStringParameters,
     inputDir: ".",
     functionsDir: "./functions/",
   });
