@@ -3,4 +3,16 @@
 .cache
 
 
-**/functions/userlibs/**
+**/functions/userlibs/_data/**
+**/functions/userlibs/_includes/**
+**/functions/userlibs/_site/**
+**/functions/userlibs/assets/**
+**/functions/userlibs/functions/**
+**/functions/userlibs/utils/**
+**/functions/userlibs/*.md
+**/functions/userlibs/*.html
+**/functions/userlibs/*.njk
+**/functions/userlibs/*.toml
+**/functions/userlibs/*.json
+
+
