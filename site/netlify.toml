@@ -4,6 +4,14 @@ functions = "functions"
 publish = "_site"
 base = "site"
 
+[functions.userlibs]
+node_bundler = "esbuild"
+external_node_modules = ["@11ty/eleventy", "@11ty/dependency-tree"]
+included_files = [
+    "./netlify/functions/userlibs/**/*",
+    "./netlify/functions/userlibs/.cache/**/*"
+]
+
 [[redirects]]
 from = "/userlibs/:slug/"
 to = "/.netlify/functions/userlibs"
