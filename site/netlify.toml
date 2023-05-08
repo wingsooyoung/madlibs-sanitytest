@@ -7,12 +7,7 @@ base = "site"
 [functions.userlibs]
 included_files = [ "**/functions/userlibs/**/*", "**/functions/userlibs/**" ]
 
-[[redirects]]
-from = "/userlibs/:slug/"
-to = "/.netlify/functions/userlibs"
-status = 200
-force = true
-_generated_by_eleventy_serverless = "userlibs"
+
 
 [[redirects]]
 from = "/userlibs/:slug/"
