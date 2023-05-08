@@ -5,8 +5,8 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPlugin(EleventyServerlessBundlerPlugin, {
     name: "userlibs", // the name to use for the functions
-    // functionsDir: "./functions/", // The functions directory
+    functionsDir: "./functions/", // The functions directory
     copy: ["utils/"], // Any files that need to be copied to make our scripts work
-    // excludeDependencies: ["./_data/madlibs.js"] // Exclude any files you don't want to run
+    excludeDependencies: ["./_data/madlibs.js"] // Exclude any files you don't want to run
   });
 };
