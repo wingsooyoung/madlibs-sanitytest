@@ -1,14 +1,15 @@
 [build]
 command = "npm run build"
 functions = "functions"
-publish = "_site"
+publish = "site/_site"
 base = "site"
 
 [functions.userlibs]
-node_bundler = "esbuild"
-external_node_modules = ["@11ty/eleventy", "@11ty/dependency-tree"]
+#node_bundler = "esbuild"
+#external_node_modules = ["@11ty/eleventy", "@11ty/dependency-tree"]
 included_files = [
-    "/functions/userlibs/**/*",
+    "**/functions/userlibs/**/*",
+    "**/functions/userlibs/**",
 ]
 
 [[redirects]]
