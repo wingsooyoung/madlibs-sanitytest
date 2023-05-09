@@ -9,7 +9,7 @@ external_node_modules = [ "@11ty/eleventy", "@11ty/dependency-tree", "pug-filter
 included_files = [ "/functions/userlibs/**/*", "/functions/userlibs/**" ]
 
 [[redirects]]
-from = "/userlibs/:slug/"
+from = "/usermadlib/:slug/"
 to = "/.netlify/builders/userlibs"
 status = 200
 force = true

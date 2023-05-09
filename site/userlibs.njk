@@ -7,10 +7,11 @@ pagination:
   serverless: eleventy.serverless.path.slug
 
 permalink: 
-  userlibs: "/userlibs/:slug/"
+  userlibs: "/usermadlib/:slug/"
 ---
 {% set slug = eleventy.serverless.path.slug %}
 
+Test: {{ eleventy.userlibs | json }}
 
 <h2>{{ userlibalias.title }}</h2>
 <div>
