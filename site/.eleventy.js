@@ -12,9 +12,5 @@ module.exports = function (eleventyConfig) {
     // excludeDependencies: ["./_data/madlibs.js"] // Exclude any files you don't want to run
   });
 
-  return {
-    dir: {
-      input: "site",
-    }
-  }
+
 };

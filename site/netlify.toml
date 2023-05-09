@@ -7,3 +7,10 @@ base = "site"
 [functions.userlibs]
 external_node_modules = [ "@11ty/eleventy", "@11ty/dependency-tree", "pug-filters" ]
 included_files = [ "/functions/userlibs/**/*", "/functions/userlibs/**" ]
+
+[[redirects]]
+from = "/userlibs/:slug/"
+to = "/.netlify/builders/userlibs"
+status = 200
+force = true
+_generated_by_eleventy_serverless = "userlibs"
