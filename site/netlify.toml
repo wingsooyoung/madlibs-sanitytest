@@ -20,7 +20,7 @@ _generated_by_eleventy_serverless = "userlibs"
 
 
 [[redirects]]
-from = "/.netlify/functions/userlibs"
+from = "./functions/userlibs"
 to = "/.netlify/builders/userlibs"
 status = 200
 force = true
