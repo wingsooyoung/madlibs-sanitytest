@@ -16,6 +16,10 @@ async function handler(event) {
     query: event.queryStringParameters,
     inputDir: ".",
     functionsDir: "./functions/",
+    config: function(config) {
+      config.addGlobalData("madlibs", event.queryStringParameters.siteUrl);
+      config.addGlobalData("userlibs", event.queryStringParameters.siteUrl);
+    }
   });
 
   try {

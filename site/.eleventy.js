@@ -1,5 +1,4 @@
-const { EleventyServerlessBundlerPlugin } = require("@11ty/eleventy");
-require("/functions/userlibs/eleventy-bundler-modules.js");
+const { EleventyServerless, EleventyServerlessBundlerPlugin } = require("@11ty/eleventy");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("assets/");
@@ -10,6 +9,12 @@ module.exports = function (eleventyConfig) {
     functionsDir: "./functions/", // The functions directory
     redirects: "netlify-toml-builders",
     copy: ["utils/", ""], // Any files that need to be copied to make our scripts work
-    excludeDependencies: ["./_data/madlibs.js"] // Exclude any files you don't want to run
+    // excludeDependencies: ["./_data/madlibs.js"] // Exclude any files you don't want to run
   });
+
+  return {
+    dir: {
+      input: "site",
+    }
+  }
 };

@@ -8,6 +8,7 @@
 **/functions/userlibs/_site/**
 **/functions/userlibs/assets/**
 **/functions/userlibs/functions/**
+**/functions/userlibs/functions/**/*
 **/functions/userlibs/utils/**
 **/functions/userlibs/*.md
 **/functions/userlibs/*.html
