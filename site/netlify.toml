@@ -11,19 +11,19 @@ included_files = [
   "**/functions/userlibs/**"
 ]
 
-[[redirects]]
-from = "/userlibs/:slug/"
-to = "/.netlify/builders/userlibs"
-status = 200
-force = true
-_generated_by_eleventy_serverless = "userlibs"
-
-
-[[redirects]]
-from = "./functions/userlibs"
-to = "/.netlify/builders/userlibs"
-status = 200
-force = true
-_generated_by_eleventy_serverless = "userlibs"
+#[[redirects]]
+#from = "/userlibs/:slug/"
+#to = "/.netlify/builders/userlibs"
+#status = 200
+#force = true
+#_generated_by_eleventy_serverless = "userlibs"
+#
+#
+#[[redirects]]
+#from = "./functions/userlibs"
+#to = "/.netlify/builders/userlibs"
+#status = 200
+#force = true
+#_generated_by_eleventy_serverless = "userlibs"
 
 
