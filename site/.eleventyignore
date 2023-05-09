@@ -13,6 +13,9 @@
 **/functions/userlibs/*.html
 **/functions/userlibs/*.njk
 **/functions/userlibs/*.toml
-**/functions/userlibs/*.json
+**/functions/userlibs/package.json
+**/functions/userlibs/package-lock.json
+
+
 
 

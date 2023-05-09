@@ -2,15 +2,17 @@
 layout: 'base.njk'
 pagination:
   data: userLibs
-  alias: userlib
+  alias: userlibalias
   size: 1
   serverless: eleventy.serverless.path.slug
 
 permalink: 
   userlibs: "/userlibs/:slug/"
 ---
+{% set slug = eleventy.serverless.path.slug %}
 
-<h2>{{ userlib.title }}</h2>
+
+<h2>{{ userlibalias.title }}</h2>
 <div>
-  {{ userlib.htmlText | safe }}
+  {{ userlibsalias.htmlText | safe }}
 </div>

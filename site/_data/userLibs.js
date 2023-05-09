@@ -9,9 +9,9 @@ const query = `*[_type == "userLib"]{
   }`
 
 module.exports = async function() {
-    const madlibs = await client.fetch(query);
+    const userlibs = await client.fetch(query);
     // Protect against no madlibs returning
-    if (madlibs.length === 0) return {"404": {}}
+    if (userlibs.length === 0) return {"404": {}}
 
     // Run through our portable text serializer
     const preppedMadlib = madlibs.map(prepText)
