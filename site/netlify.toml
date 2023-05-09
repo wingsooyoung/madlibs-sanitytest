@@ -5,7 +5,7 @@ publish = "_site"
 base = "site"
 
 [functions.userlibs]
-node_bundler = "esbuild"
+node_bundler = "zisi"
 external_node_modules = ["@11ty/eleventy", "@11ty/dependency-tree", "pug-filters"]
 included_files = [ "**/functions/userlibs/**/*", "**/functions/userlibs/**", "**/functions/userlibs/eleventy-serverless-map.json" ]
 

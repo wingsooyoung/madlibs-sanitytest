@@ -5,4 +5,3 @@
 
 **/functions/userlibs/**
 !functions/userlibs/index.js
-!/functions/userlibs/eleventy-bundler-modules.js
