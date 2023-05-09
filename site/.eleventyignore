@@ -13,8 +13,7 @@
 **/functions/userlibs/*.html
 **/functions/userlibs/*.njk
 **/functions/userlibs/*.toml
-**/functions/userlibs/package.json
-**/functions/userlibs/package-lock.json
+
 
 
 
