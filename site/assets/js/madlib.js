@@ -65,7 +65,7 @@ async function saveLib(event) {
       // Add the div after the saving link
       saver.after(landingZone)
       // Add the new link inside the landing zone
-      landingZone.innerHTML = `<a href="/userlibs/${data._id}/" class="savedUrl">Your url is /userlibs/${data._id}/</a>`
+      landingZone.innerHTML = `<a href="/usermadlib/${data._id}/" class="savedUrl">Your url is /usermadlib/${data._id}/</a>`
 
     }).catch(error => {
       // When errors happen, do something with them
