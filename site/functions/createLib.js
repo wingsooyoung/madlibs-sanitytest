@@ -44,6 +44,7 @@ exports.handler = async (event) => {
     return client.create(doc).then((res) => {
         // Log the success into our function log
         console.log(`Userlib was created, document ID is ${res._id}`)
+        console.log(JSON.stringify((doc)))
         // return with a 200 status and a stringified JSON object we get from the Sanity API
         return { statusCode: 200, body: JSON.stringify(doc) };
     }).catch(err => {

@@ -22,6 +22,7 @@ module.exports = async function() {
         // 11ty's Pagination will create pages for each one
         const mapLibs = preppedMadlib.map(item => ([item.slug, item]))
         const objLibs = Object.fromEntries(mapLibs)
+        console.log(madlibs)
         return objLibs
    } catch (error) {
        console.log("ERROR MESSAGE FROM _DATA / userLibs.JS FILE >" + error)

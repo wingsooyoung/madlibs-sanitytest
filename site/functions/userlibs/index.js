@@ -8,7 +8,7 @@ require("./eleventy-bundler-modules.js");
 async function handler(event) {
   console.log("raw url >" + event.rawUrl)
   console.log("path >" + event.path)
-  console.log("query >" + event.queryStringParameters)
+  console.log("query >" + JSON.stringify(event.queryStringParameters))
 
 
   let elev = new EleventyServerless("userlibs", {
@@ -16,6 +16,7 @@ async function handler(event) {
     query: event.queryStringParameters,
     inputDir: ".",
     functionsDir: "./functions/",
+    singleTemplateScope: false,
     config: function(config) {
       config.addGlobalData("madlibs", event.queryStringParameters.siteUrl);
       config.addGlobalData("userlibs", event.queryStringParameters.siteUrl);
