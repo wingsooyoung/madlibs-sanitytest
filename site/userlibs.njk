@@ -8,12 +8,10 @@ pagination: {
   userlibs: "eleventy.userlibs.path.slug",
 },
 permalink: {
-  userlibs: ["/usermadlib/", "/usermadlib/:slug/"],
+  userlibs: ["/usermadlib/:slug/"],
 }
 }
 ---
-
-{% set slug = eleventy.userlibs.path.slug %}
 
 Test: {{ eleventy.userlibs | json }}
 
