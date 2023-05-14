@@ -6,6 +6,7 @@ const { builder } = require("@netlify/functions");
 require("./eleventy-bundler-modules.js");
 
 async function handler(event) {
+  console.log(event)
   console.log("raw url >" + event.rawUrl)
   console.log("path >" + event.path)
   console.log("query >" + JSON.stringify(event.queryStringParameters))
