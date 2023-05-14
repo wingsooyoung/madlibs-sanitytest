@@ -5,6 +5,6 @@
 
 **/functions/userlibs/**
 
-!/functions/userlibs/index.js
+!/functions/userlibs/userlibs.js
 !/functions/userlibs/package.json
 !/functions/userlibs/package-lock.json

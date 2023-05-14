@@ -7,16 +7,16 @@ _site
 .netlify
 
 netlify/builders/userlibs/*
-!netlify/builders/userlibs/index.js
+!netlify/builders/userlibs/userlibs.js
 !netlify/builders/userlibs/package.json
 !netlify/builders/userlibs/package-lock.json
 
 netlify/functions/userlibs/*
-!netlify/functions/userlibs/index.js
+!netlify/functions/userlibs/userlibs.js
 !netlify/functions/userlibs/package.json
 !netlify/functions/userlibs/package-lock.json
 
 **/functions/userlibs/**
-!functions/userlibs/index.js
+!functions/userlibs/userlibs.js
 !functions/userlibs/package.json
 !functions/userlibs/package-lock.json
