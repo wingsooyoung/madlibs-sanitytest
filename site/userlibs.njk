@@ -1,15 +1,19 @@
+---js
+{
+layout: "base.njk",
+pagination: {
+  data: userLibs,
+  alias: userlibalias,
+  size: 1,
+  userlibs: "eleventy.userlibs.path.slug",
+},
+permalink: {
+  userlibs: ["/usermadlib/", "/usermadlib/:slug/"],
+}
+}
 ---
-layout: 'base.njk'
-pagination:
-  data: userLibs
-  alias: userlibalias
-  size: 1
-  serverless: eleventy.serverless.path.slug
 
-permalink: 
-  userlibs: "/usermadlib/:slug/"
----
-{% set slug = eleventy.serverless.path.slug %}
+{% set slug = eleventy.userlibs.path.slug %}
 
 Test: {{ eleventy.userlibs | json }}
 
